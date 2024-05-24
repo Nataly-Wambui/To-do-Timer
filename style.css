@@ -1,0 +1,190 @@
+.mainContainer {
+    display: grid;  
+ }
+ .container {
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    background-color: #d9f0f1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 12px rgba(0, 0, 0, 0.25); 
+}
+.stoper{
+    padding-top: 5%;
+}
+.stoperTime{
+    text-align: center;
+    font-size: 62px;
+    line-height: 40px;
+    letter-spacing: 0.02em; 
+}
+.buttons{
+    text-align: center;
+    padding: 0 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+.buttonMain{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    outline: none;
+    color: #ffffff;
+    background: #1b98d6;
+    border: 1px solid #1b98d6;
+    box-sizing: border-box;
+    box-shadow: -2px -2px 8px #FFFFFF, 2px 2px 15px #1b98d6;
+    border-radius: 25px; 
+}
+.buttonReset{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    outline: none;
+    color: #FFFFFF;
+    background: #1b98d6;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.7), 2px 2px 4px rgba(209, 205, 199, 0.8);
+    border-radius: 25px; 
+}
+#selectButton{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    outline: none;
+    color: #6f521b;
+    font-size: 16px;
+    background: #90cfee;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.7), 2px 2px 4px rgba(209, 205, 199, 0.8);
+    border-radius: 25px; 
+    margin-left: 41%;
+    margin-top: 5%;
+    
+}
+
+#background-image{
+    background-image: url(/Media/pexels-tirachard-kumtanom-112571-733857.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 0.9;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--primarytext);
+    margin-bottom: 1.5rem;
+}
+#task-form{
+    display: flex;
+    gap: 5%;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#task-input{
+    flex: 1 1 0%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#task-input::placeholder{
+    color: rgb(117, 102, 102);
+}
+#task-submit{
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 100px;
+    background-color: #1b98d6;
+}
+
+#task-submit:hover{
+    opacity: 0.8;
+}
+#task-submit:active{
+    opacity: 0.6;
+}
+.container{
+    flex: 0% 1 0%;
+    width: 850px;
+    height: 650px;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    overflow-y: auto;
+    margin-top: 5%;
+}
+main{
+    flex: 1 1 0%;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list{
+    padding: 1rem;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #93cce9;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+#tasks .task .content{
+    flex: 1 1 0%;
+}
+#tasks .task .content .text{
+    color: var(--primarytext);
+    font-size: 20px;
+    width: 100%;
+    display: block;
+}
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .actions button{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+}
+.task .actions button:hover{
+    opacity: 0.8;
+}
+.task .actions button:active{
+    opacity: 0.6;
+}
+.task .actions .Edit{
+    color: var(--lightgreen);
+}
+.task .actions .Delete{
+    color: crimson;
+}
+.task .actions .Completed{
+    color: rgb(21, 155, 21)
+}
+.strike {
+    text-decoration: line-through;
+}
+#task{
+    overflow-y: auto;
+}
